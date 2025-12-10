@@ -19,3 +19,7 @@ protected:
 	std::vector<std::unique_ptr<RenderPass>> myPasses;
 };
 
+class RenderPass 
+{
+
+};

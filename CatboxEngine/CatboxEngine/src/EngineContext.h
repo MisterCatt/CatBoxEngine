@@ -1,6 +1,7 @@
 #pragma once
 #include "Renderer.h"
 #include "Scene.h"
+#include "DebugConsole.h"
 
 class EngineContext
 {

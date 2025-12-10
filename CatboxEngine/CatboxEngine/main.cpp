@@ -3,6 +3,12 @@
 #include <glad/glad.h>
 #include <glfw3.h>
 
+void processInput(GLFWwindow* window)
+{
+	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+		glfwSetWindowShouldClose(window, true);
+}
+
 
 int main() {
 
@@ -33,6 +39,9 @@ int main() {
 	{
 		glClear(GL_COLOR_BUFFER_BIT);
 		glClearColor(0.4f, 0.3f, 0.2f, 1.0f);
+
+		processInput(window); //If escape - exit the program
+
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 	}

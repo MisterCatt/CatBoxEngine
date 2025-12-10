@@ -1,6 +1,8 @@
 #pragma once
 #include <memory>
 #include "Renderable.h"
+#include "Camera.h"
+#include "FrameBuffer.h"
 
 //Main purpose of Scene is to hold all renderable objects and the main camera
 //The camera is need as a context for the objects
